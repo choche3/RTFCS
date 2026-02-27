@@ -31,7 +31,7 @@ export default function Footer() {
 
                 {/** Locations */}
                 <div>
-                    <h4 className="text-white font-bold uppercase tracking-wide m-4">
+                    <h4 className="text-white font-bold uppercase tracking-wide mb-4">
                         Locations
                     </h4>
                     <div className="text-sm space-y-4">

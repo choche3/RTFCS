@@ -3,12 +3,12 @@ import Link from "next/link"
 
 export default function ServiceSection(){
     return(
-        <section className="bg-navy py-24 border-t border-steel/20">
+        <section className="bg-navy py-28 border-t border-steel/30">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
                 {/**Section Header */}
                 <div className="mb-16 max-w-2xl">
-                    <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-wideHeavy mb-4">
+                    <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wideHeavy mb-4">
                         Our Services
                     </h2>
                     <p className="text-steel text-lg">
@@ -20,17 +20,17 @@ export default function ServiceSection(){
                 {/**Services Grid */}
                 <div className="grid md:grid-cols-3 gap-8">
                     {/**Service 1 */}
-                    <div className="border border-steel/30 bg-black hover:border-industrial transition-colors duration-300">
+                    <div className="group border border-steel/30 bg-navy hover:border-industrial transition-colors duration-300">
                         <div className="relative h-56 w-full">
                             <Image
                                 src="/image/hero.jpg"
-                                alt="Security fabrication"
+                                alt ="Security fabrication"
                                 fill
                                 className="object-cover"
                             />
                         </div>
                         <div className="p-8">
-                            <h3 className="text-xl font-bold uppercase tracking-wide mb-4">
+                            <h3 className="text-xl font-bold uppercase tracking-wide mb-4 group-hover:text-industrial transition-colors">
                                 Security Fabrication
                             </h3>
                             <p className="text-steel mb-6">
@@ -47,7 +47,7 @@ export default function ServiceSection(){
                     </div>
 
                     {/**Service 2 */}
-                    <div className="border border-steel/30 bg-black hover:border-industrial transition-colors">
+                    <div className="group border border-steel/30 bg-navy hover:border-industrial transition-colors">
                         <div className="relative h-56 w-full">
                             <Image
                                 src="/image/hero.jpg"
@@ -57,7 +57,7 @@ export default function ServiceSection(){
                             />
                         </div>
                         <div className="p-8">
-                            <h3 className="text-xl font-bold uppercase tracking-wide mb-4">
+                            <h3 className="text-xl font-bold uppercase tracking-wide mb-4 group-hover:text-industrial transition-colors">
                                 Structural steel
                             </h3>
                             <p className="text-steel mb-6">
@@ -73,7 +73,7 @@ export default function ServiceSection(){
                         </div>
                     </div>
                     {/**Service 3 */}    
-                    <div className="border border-steel/30 bg-black hover:border-industrial transition-colors">
+                    <div className="group border border-steel/30 bg-navy hover:border-industrial transition-colors">
                         <div className="relative h-56 w-full">
                             <Image
                                 src="/image/hero.jpg"
@@ -83,7 +83,7 @@ export default function ServiceSection(){
                             />
                         </div>
                         <div className="p-8">
-                            <h3 className="text-xl font-bold uppercase tracking-wide mb-4">
+                            <h3 className="text-xl font-bold uppercase tracking-wide mb-4 group-hover:text-industrial transition-colors">
                                 construction services
                             </h3>
                             <p className="text-steel mb-6">

@@ -9,7 +9,7 @@ export default function CallToAction() {
                     Lets Build Something Strong
                 </h2>
 
-                <p className="text-lg text-black/80 max-w-2xl mx-auto mb-12">
+                <p className="text-lg text-white/80 max-w-2xl mx-auto mb-12">
                     Whether its structural fabrication, custom steel works, or full construction,
                     our team is ready to deliver reliable results on time and on budget.
                 </p>
@@ -18,14 +18,14 @@ export default function CallToAction() {
 
                     <Link
                         href="/contact"
-                        className="bg-black text-white px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black/80 transition"
+                        className="bg-gray-900 text-white px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black/80 transition"
                     >
                         Request a Quote
                     </Link>
 
                     <Link 
                         href="/projects"
-                        className="border-2 border-black px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black hover:text-white transition"
+                        className=" bg-gray-900 rounded-lg border-2 border-black px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black hover:text-white transition"
                     >
                         View Our Work
                     </Link>

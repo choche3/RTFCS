@@ -25,7 +25,7 @@ export default function CallToAction() {
 
                     <Link 
                         href="/projects"
-                        className=" bg-gray-900 rounded-lg border-2 border-black px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black hover:text-white transition"
+                        className=" bg-gray-900  border-2 border-black px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black hover:text-white transition"
                     >
                         View Our Work
                     </Link>

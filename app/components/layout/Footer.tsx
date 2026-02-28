@@ -38,24 +38,27 @@ export default function Footer() {
                         <div>
                             <p className="text-white font-semibold">Lusaka</p>
                             <p>Alick Nkhata Road</p>
-                            <p>+26097 xx xxx</p>
+                            <p>+260 97 2958096</p>
                         </div>
                         <div>
                             <p className="text-white font-semibold">Kitwe</p>
                             <p>Wusakile Round About</p>
-                            <p>+26095 xx xxx</p>
+                            <p>+260 95 xxxxx</p>
                         </div>
                     </div>
                 </div>
 
                 {/**Contact Info */}
                 <div>
-                    <h4 className="text-white font-bold uppercase tracking-wide mb-4">
+                    <h4 className="text-white font-bold uppercase tracking-wide mb-1">
                         Contact Us
                     </h4>
+                    <p className="text-white text-sm uppercase tracking-wide mb-1">
+                        Know us, know the quality
+                    </p>
                     <Link 
                     href="/contact"
-                    className="inline-block bg-industrial text-black px-6 py-3 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition-colors duration-300">
+                    className="inline-block mb-3 bg-industrial text-steel px-6 py-3 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition-colors duration-300">
                     Get in Touch
                     </Link>
                 </div>

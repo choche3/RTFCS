@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="max-w-3xl">
 
                     <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-wideHeavy leading-tight mb-6">
-                        Professional Steel Fabrication & Constructions Services
+                        Real Time Fabricators & Construction Services
                     </h1>
 
                     <p className="text-steel text-lg md:text-xl mb-8">

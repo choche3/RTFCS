@@ -33,7 +33,7 @@ export default function ContactInfo() {
                     target="_blank"
                     className="inline-block bg-industrial text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition"
                 >
-                    Chat with us on WhatsApp
+                    Click<i className="fab fa-whatsapp mr-2"> here </i>to chat with us on <i className="fab fa-whatsapp mr-2">WhatsApp</i>
                 </a>
              
             </div>

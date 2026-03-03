@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <Hero />
 
-      <section className="bg-industrial py-20">
+      <section className="bg-gray-500 py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12">
           <ContactInfo />
           <ContactForm />

@@ -1,7 +1,8 @@
 
 
-export default function contactInfo() {
-    <section className="bg-white py-20">
+export default function ContactInfo() {
+    return(
+    <section className="bg-navy py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
                 <div className="border border-steel/30 p-6 rounded-xl shadow-sm">
@@ -39,5 +40,6 @@ export default function contactInfo() {
 
         </div>
     </section>
+    )
 
 }

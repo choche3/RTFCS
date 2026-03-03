@@ -21,6 +21,8 @@ export default function ContactPage(){
         alert("Message sent successfully!")
     }
 
+    return(
+
     <form onSubmit={handleSubmit} className="space-y-6 border border-steel/30 p-8 rounded-xl shadow-md">
 
         <div>
@@ -41,6 +43,7 @@ export default function ContactPage(){
                 type="email"
                 name="email"
                 value={formData.email}
+                onChange={handleChange}
                 required
                 className="w-full border border-steel/40 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-industrial"
             />
@@ -76,5 +79,6 @@ export default function ContactPage(){
             Send Message
         </button>
     </form>
+    )
 
 } 

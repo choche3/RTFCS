@@ -31,10 +31,10 @@ export default function Navbar(){
                     <Link href="/projects" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Projects
                     </Link>
-                    <Link href="/contact" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/contacts" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Location
                     </Link>
-                    <Link href="/contact" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/contacts" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Contact
                     </Link>
 

@@ -7,7 +7,7 @@ export default function Footer() {
                 {/**Company Info */}
                 <div>
                     <h3 className="text-white font-bold uppercase tracking-wideHeavy mb-4">
-                        RT Fabrications & Construction Services
+                        Real time fabricators & Construction Services & steel supply
                     </h3>
                     <p className="text-sm leading-relaxed">
                     Professional steel fabrication and costruction services operating
@@ -53,16 +53,15 @@ export default function Footer() {
                     <h4 className="text-white font-bold uppercase tracking-wide mb-1">
                         Contact Us
                     </h4>
-                    <p className="text-white text-sm uppercase tracking-wide mb-1">
+                    <p className="text-white text-sm tracking-wide mb-2">
                         Know us, know the quality
                     </p>
                     <Link 
                     href="/contact"
-                    className="inline-block mb-3 bg-industrial text-steel px-6 py-3 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition-colors duration-300">
+                    className="inline-block mb-2 bg-industrial text-steel px-2 py-2 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition-colors duration-300">
                     Get in Touch
                     </Link>
                 </div>
-    
             </div>
 
             {/**Botto bar */}

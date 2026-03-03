@@ -17,7 +17,7 @@ export default function CallToAction() {
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
 
                     <Link
-                        href="/contact"
+                        href="/contacts"
                         className="bg-gray-900 text-white px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black/80 transition"
                     >
                         Request a Quote

@@ -30,7 +30,7 @@ export default function Hero() {
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link 
-                           href="/contact"
+                           href="/contacts"
                            className="bg-steel text-white px-8 py-4 rounded-md uppercase font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition duration-300 text-center"
                         >
                             Contact Us

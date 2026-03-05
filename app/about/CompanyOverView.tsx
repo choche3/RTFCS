@@ -2,11 +2,11 @@
 
 export default function CompanyOverview() {
     return(
-        <section className="bg-steel/50 py-20">
+        <section className="bg-white py-20">
             <div className="max-w-6xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
 
                 <div>
-                <h2 className="text-3xl md:text-4xl font-bold uppercase mb-6">
+                <h2 className="text-3xl text-gray-800 md:text-4xl font-bold uppercase mb-6">
                     Who We Are
                 </h2>
 
@@ -24,8 +24,8 @@ export default function CompanyOverview() {
                 </p>
                 </div>
 
-                <div className="border border-steel/30 p-10 bg-white shadow-lg rounded-2xl">
-                <h3 className="text-2xl font-bold mb-4">Since 2012</h3>
+                <div className="border border-steel/30 p-10 bg-gray-200 shadow-lg rounded-2xl">
+                <h3 className="text-2xl text-black font-bold mb-4">Since 2012</h3>
                 <p className="text-gray-600">
                     Over 13 years of experience delivering reliable metal fabrication
                     and security solutions across Zambia.

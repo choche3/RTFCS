@@ -31,7 +31,7 @@ export default function Navbar(){
                     <Link href="/projects" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Projects
                     </Link>
-                    <Link href="/contacts" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Location
                     </Link>
                     <Link href="/contacts" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
@@ -65,16 +65,16 @@ export default function Navbar(){
                     <Link href="/projects" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
                         Projects
                     </Link>
-                    <Link href="/contact" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
+                    <Link href="/" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
                         Location
                     </Link>
-                    <Link href="/contact" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
+                    <Link href="/contacts" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
                         Contact
                     </Link>
 
                     <Link
-                        href="/contact"
-                        className="block w-full text-center bg-industrial text-black py-3 uppercase font-bold tracing-wide"
+                        href="/contacts"
+                        className="block w-full text-center bg-industrial text-gray-300 py-3 uppercase font-bold tracing-wide"
                         onClick={() => setIsOpen(false)}
                     >
                         Get in Touch

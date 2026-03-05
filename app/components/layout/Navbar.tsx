@@ -31,17 +31,14 @@ export default function Navbar(){
                     <Link href="/projects" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Projects
                     </Link>
-                    <Link href="/" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/locations" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Location
                     </Link>
                     <Link href="/contacts" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Contact
                     </Link>
 
-                    {/**Call to action CTA */}
-                    <Link href="/contact" className="bg-industrial text-black px-5 py-2 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition-colors duration-300">
-                        Get in Touch
-                    </Link>
+                   
                 </nav>
 
                 {/**Mobile Navigation */}
@@ -65,7 +62,7 @@ export default function Navbar(){
                     <Link href="/projects" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
                         Projects
                     </Link>
-                    <Link href="/" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
+                    <Link href="/locations" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>
                         Location
                     </Link>
                     <Link href="/contacts" className="block text-white uppercase text-base tracking-wide font-semibold" onClick={() => setIsOpen(false)}>

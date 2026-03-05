@@ -4,7 +4,7 @@ export default function ServicesGrid() {
     return(
         <section className="bg-steel/10 py-20">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
-                |<h2 className="text-3xl md:text-4xl font-bold text-center uppercase mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-center uppercase mb-16">
                     What We Do
                 </h2>
 
@@ -50,7 +50,7 @@ export default function ServicesGrid() {
                             Supporting construction projects with steel components, fabrication and installation services.
                         </p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>

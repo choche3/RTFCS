@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Real Time Fabrications and Construction Services",
   description: "Professional steel fabrication and construction services for residential and commercial projects. Contact us for custom solutions and expert craftsmanship. Located in Lusaka and Kitwe.",
+  authors: [{ name: "Joseph"}]
 };
 
 export default function RootLayout({

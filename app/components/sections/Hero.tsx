@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="max-w-3xl">
 
                     <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-wideHeavy leading-tight mb-6">
-                        Real Time Fabricators & Construction Services
+                        Real Time <span className=" text-yellow-600">Fabricators</span> & Construction Services
                     </h1>
 
                     <p className="text-steel text-lg md:text-xl mb-8">
@@ -31,9 +31,9 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link 
                            href="/contacts"
-                           className="bg-steel text-white px-8 py-4 rounded-md uppercase font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition duration-300 text-center"
+                           className="bg-yellow-600 text-white px-8 py-4 rounded-md uppercase font-bold tracking-wide border border-industrial hover:bg-yellow-600 transition duration-300 text-center"
                         >
-                            Contact Us
+                            Contact Us 📞
                         </Link>
 
                         <Link 

@@ -2,7 +2,7 @@
 
 export default function Direction () {
     return(
-        <section className="bg-industrial py-20 text-center text-white">
+        <section className="bg-gray-700 py-24 text-center text-white">
             <div className="max-w-4xl mx-auto px-6">
 
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 uppercase">
@@ -16,7 +16,7 @@ export default function Direction () {
 
                 <a
                 href="/contacts"
-                className="bg-navy px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
+                className="bg-yellow-600 px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
                 >
                 Contact Us
                 </a>

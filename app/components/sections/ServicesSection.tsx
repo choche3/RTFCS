@@ -39,7 +39,7 @@ export default function ServiceSection(){
                             </p>
                             <Link 
                                 href="/services"
-                                className="uppercase text-sm font tracking-wide text-industrial"
+                                className="uppercase text-sm font tracking-wide text-yellow-600"
                             >
                                     Learn More →
                             </Link>
@@ -66,7 +66,7 @@ export default function ServiceSection(){
                             </p>
                             <Link 
                                 href="/services"
-                                className="uppercase text-sm font tracking-wide text-industrial"
+                                className="uppercase text-sm font tracking-wide text-yellow-600"
                             >
                                     Learn More →
                             </Link>
@@ -92,7 +92,7 @@ export default function ServiceSection(){
                             </p>
                             <Link 
                                 href="/services"
-                                className="uppercase text-sm font tracking-wide text-industrial"
+                                className="uppercase text-sm font tracking-wide text-yellow-600"
                             >
                                     Learn More →
                             </Link>

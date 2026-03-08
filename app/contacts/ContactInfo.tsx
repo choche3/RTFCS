@@ -17,7 +17,7 @@ export default function ContactInfo() {
                 </div>
 
                 <div className="border border-steel/30 p-6 rounded-xl shadow-sm">
-                    <h3 className="font-bold text-lg mb-2">Office Address</h3>
+                    <h3 className="font-bold text-lg mb-2">Lusaka Branch</h3>
                     <p className="text-steel">Alick Nkhata Road, Lusaka, Zambia</p>
                 </div>
 

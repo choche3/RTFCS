@@ -18,14 +18,14 @@ export default function CallToAction() {
 
                     <Link
                         href="/contacts"
-                        className="bg-gray-900 text-white px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black/80 transition"
+                        className="bg-yellow-600 text-white px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-yellow-500 transition"
                     >
                         Request a Quote
                     </Link>
 
                     <Link 
                         href="/projects"
-                        className=" bg-gray-900  border-2 border-black px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-black hover:text-white transition"
+                        className=" bg-gray-900  border-2 border-black px-8 py-4 uppercase text-sm font-bold tracking-wide hover:bg-gray-800 hover:text-white transition"
                     >
                         View Our Work
                     </Link>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProjectsPreview() {
     return(
-        <section className="bg-navy py-28 border-t border-steel/30">
+        <section className="bg-gray-700 py-28 border-t border-steel/30">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 {/**Header */}
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
@@ -23,14 +23,14 @@ export default function ProjectsPreview() {
                         href="/projects"
                         className="uppercase text-sm font-bold tracking-wide text-industrial"
                     >
-                        view All Projects →
+                       <span className="text-yellow-600">view All Projects →</span>
                     </Link>
                 </div>
 
                 {/** Grid */}
                 <div className="grid md:grid-cols-2 gap-8">
                     {/** project card */}
-                    <div className="relative group h-80 overflow-hidden border-steel/30">
+                    <div className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
                             src="/image/hero.jpg"
                             alt="steel structure installation"

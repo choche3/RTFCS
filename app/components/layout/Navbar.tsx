@@ -13,7 +13,7 @@ export default function Navbar(){
                 {/**logo */}
                 <Link href="/" className="flex flex-col leading-tight">
                     <span className="text-white font-extrabold text-lg tracking-wideHeavy uppercase">
-                        RT Fabrications
+                        RT <span className="text-yellow-600">Fabrications</span>
                     </span>
                     <span className="text-steel text-xs uppercase tracking-wider">
                         & Construction Services

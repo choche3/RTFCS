@@ -2,7 +2,7 @@
 
 export default function Cta() {
   return (
-    <section className="bg-industrial py-20 text-center text-white">
+    <section className="bg-gray-700 py-20 text-center text-white">
 
       <div className="max-w-4xl mx-auto px-6">
 
@@ -17,7 +17,7 @@ export default function Cta() {
 
         <a
           href="/contacts"
-          className="bg-navy px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
+          className="bg-yellow-600 px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
         >
           Request a Quote
         </a>

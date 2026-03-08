@@ -7,7 +7,7 @@ export default function Footer() {
                 {/**Company Info */}
                 <div>
                     <h3 className="text-white font-bold uppercase tracking-wideHeavy mb-4">
-                        Real time fabricators & Construction Services & steel supply
+                        Real time <span className="text-yellow-600">fabricators</span> & Construction Services & steel supply
                     </h3>
                     <p className="text-sm leading-relaxed">
                     Professional steel fabrication and costruction services operating
@@ -58,7 +58,7 @@ export default function Footer() {
                     </p>
                     <Link 
                     href="/contacts"
-                    className="inline-block mb-2 bg-industrial text-steel px-2 py-2 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial hover:bg-yellow-400 transition-colors duration-300">
+                    className="inline-block mb-2 bg-industrial text-steel px-2 py-2 rounded-md uppercase text-sm font-bold tracking-wide border border-industrial bg-yellow-600 transition-colors hover:bg-yellow-500 transition duration-300 duration-300">
                     Get in Touch
                     </Link>
                 </div>

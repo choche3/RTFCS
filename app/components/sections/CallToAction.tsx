@@ -1,10 +1,19 @@
+"use client"
+
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animations";
 
 
 export default function CallToAction() {
     return(
         <section className="bg-industrial py-28 border-black/40">
-            <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center">
+            <motion.div 
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="max-w-5xl mx-auto px-6 lg:px-12 text-center">
                 <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide mb-6">
                     Lets Build Something Strong
                 </h2>
@@ -30,7 +39,7 @@ export default function CallToAction() {
                         View Our Work
                     </Link>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

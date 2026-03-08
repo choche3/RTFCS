@@ -17,7 +17,7 @@ export default function Cta() {
 
         <a
           href="/contacts"
-          className="bg-yellow-600 px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
+          className="bg-yellow-600 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition"
         >
           Request a Quote
         </a>

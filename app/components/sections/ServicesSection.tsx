@@ -1,10 +1,20 @@
+"use client"
+
+import { fadeUp, staggerContainer } from "@/lib/animations";
 import Image from "next/image";
 import Link from "next/link"
+import { motion } from "framer-motion";
 
 export default function ServiceSection(){
     return(
         <section className="bg-navy py-28 border-t border-steel/30">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <motion.div 
+                className="max-w-7xl mx-auto px-6 lg:px-12"
+                variants ={staggerContainer}
+                initial= "hidden"
+                whileInView= "show"
+                viewport={{ once: true}}
+            >
 
                 {/**Section Header */}
                 <div className="mb-16 max-w-2xl">
@@ -20,10 +30,13 @@ export default function ServiceSection(){
                 {/**Services Grid */}
                 <div className="grid md:grid-cols-3 gap-8">
                     {/**Service 1 */}
-                    <div className="group border border-steel/30 bg-navy hover:border-industrial transition-colors duration-300">
+                    <motion.div 
+                        variants={fadeUp}
+                        className="group border border-steel/30 bg-navy hover:border-industrial transition-colors duration-300"
+                    >
                         <div className="relative h-56 w-full">
                             <Image
-                                src="/image/hero.jpg"
+                                src="/image/IMG-20260225-WA0020.jpg"
                                 alt ="Security fabrication"
                                 fill
                                 className="object-cover"
@@ -44,13 +57,16 @@ export default function ServiceSection(){
                                     Learn More →
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/**Service 2 */}
-                    <div className="group border border-steel/30 bg-navy hover:border-industrial transition-colors">
+                    <motion.div
+                        variants={fadeUp}
+                        className="group border border-steel/30 bg-navy hover:border-industrial transition-colors"
+                    >
                         <div className="relative h-56 w-full">
                             <Image
-                                src="/image/hero.jpg"
+                                src="/image/MainHero.jpg"
                                 alt="structural steel fabrication"
                                 fill
                                 className="object-cover"
@@ -71,12 +87,14 @@ export default function ServiceSection(){
                                     Learn More →
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
                     {/**Service 3 */}    
-                    <div className="group border border-steel/30 bg-navy hover:border-industrial transition-colors">
+                    <motion.div
+                        variants={fadeUp} 
+                        className="group border border-steel/30 bg-navy hover:border-industrial transition-colors">
                         <div className="relative h-56 w-full">
                             <Image
-                                src="/image/hero.jpg"
+                                src="/image/IMG-20260225-WA0009.jpg"
                                 alt="Construction services"
                                 fill
                                 className="object-cover"
@@ -97,9 +115,9 @@ export default function ServiceSection(){
                                     Learn More →
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

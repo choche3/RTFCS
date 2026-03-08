@@ -15,11 +15,11 @@ export default function ProjectCard({ title, category, description, image }: Pro
 
             <div className="p-6">
 
-                <span className="text-sm text-indutrial font-semibold uppercase">
+                <span className="text-sm text-gray-900 text-indutrial font-semibold uppercase">
                     {category}
                 </span>
 
-                <h3 className="text-xl font-bold mt-2 mb-3">
+                <h3 className="text-xl text-gray-700 font-bold mt-2 mb-3">
                     {title}
                 </h3>
 

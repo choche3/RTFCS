@@ -40,7 +40,7 @@ export default function ServicesGrid() {
                     <div className="bg-white p-8 rounded-xl shadow border border-steel/30">
                         <h3 className="text-xl text-gray-800 font-bold mb-4">Gate & Fence Fabrication</h3>
                         <p className="text-gray-700">
-                            Custom gates, fencing systemsad security barriers built fir durability and long-term performance.
+                            Custom gates, fencing systems and security barriers built for durability and long-term performance.
                         </p>
                     </div>
 

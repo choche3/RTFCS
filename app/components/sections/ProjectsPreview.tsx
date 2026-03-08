@@ -1,6 +1,10 @@
+"use client"
+
 //import { Link } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 
 export default function ProjectsPreview() {
@@ -28,9 +32,17 @@ export default function ProjectsPreview() {
                 </div>
 
                 {/** Grid */}
-                <div className="grid md:grid-cols-2 gap-8">
+                <motion.div
+                    variants={staggerContainer}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                     className="grid md:grid-cols-2 gap-8"
+                >
                     {/** project card */}
-                    <div className="relative group h-80 overflow-hidden border border-steel/30">
+                    <motion.div 
+                        variants={fadeUp}
+                        className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
                             src="/image/hero.jpg"
                             alt="steel structure installation"
@@ -46,9 +58,11 @@ export default function ProjectsPreview() {
                                 Structural installation project - Lusaka
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="relative group h-80 overflow-hidden border border-steel/30">
+                    <motion.div
+                        variants={fadeUp} 
+                        className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
                             src="/image/hero.jpg"
                             alt="Custom security gate"
@@ -64,9 +78,11 @@ export default function ProjectsPreview() {
                                 Industrial fabrication project - Lusaka
                             </p>
                         </div>
-                    </div> 
+                    </motion.div> 
 
-                    <div className="relative group h-80 overflow-hidden border border-steel/30">
+                    <motion.div 
+                        variants={fadeUp}
+                        className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
                             src="/image/hero.jpg"
                             alt="Steel door fabrication"
@@ -83,8 +99,8 @@ export default function ProjectsPreview() {
                             </p>
                         </div>
 
-                    </div>                       
-                </div>
+                    </motion.div>                       
+                </motion.div>
             </div>
         </section>
     )

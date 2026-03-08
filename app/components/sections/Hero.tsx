@@ -1,12 +1,16 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animations";
 
 export default function Hero() {
     return(
-        <section className="relative w-full h-[85vh] flex items-center">
+        <section className="relative w-full h-[75vh] flex items-center">
             {/**Background Image */}
             <Image
-               src="/image/hero.jpg"
+               src="/image/MainHero.jpg"
                alt="Industrial steel fabrication workshop"
                fill
                priority
@@ -17,9 +21,14 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/70" />
             {/**Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-                <div className="max-w-3xl">
+                <motion.div
+                    className="max-w-3xl"
+                    initial="hidden"
+                    animate="show"
+                    variants={fadeUp}
+                >
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-wideHeavy leading-tight mb-6">
+                    <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-wide leading-tight mb-6">
                         Real Time <span className=" text-yellow-600">Fabricators</span> & Construction Services
                     </h1>
 
@@ -31,7 +40,7 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link 
                            href="/contacts"
-                           className="bg-yellow-600 text-white px-8 py-4 rounded-md uppercase font-bold tracking-wide border border-industrial hover:bg-yellow-600 transition duration-300 text-center"
+                           className="bg-yellow-600 text-white px-8 py-4 rounded-md uppercase font-bold tracking-wide border border-industrial hover:bg-yellow-500 transition duration-300 text-center"
                         >
                             Contact Us 📞
                         </Link>
@@ -43,7 +52,7 @@ export default function Hero() {
                             View Projects
                         </Link>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

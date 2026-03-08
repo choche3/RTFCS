@@ -6,37 +6,37 @@ const projects = [
     title: "Industrial Steel Structure",
     category: "Structural Fabrication",
     description: "Fabrication and installation of a reinforced steel structure for a warehouse facility.",
-    image: "/image/project1.jpg"
+    image: "/image/hero.jpg"
   },
   {
     title: "Security Gate Installation",
     category: "Security Systems",
     description: "Custom heavy-duty security gate designed and installed for residential protection.",
-    image: "/image/project2.jpg"
+    image: "/image/IMG-20260225-WA0022.jpg"
   },
   {
     title: "Commercial Steel Staircase",
     category: "Metal Fabrication",
     description: "Precision-crafted steel staircase installed for a commercial office building.",
-    image: "/image/project3.jpg"
+    image: "/image/hero.jpg"
   },
   {
     title: "Perimeter Security Fencing",
     category: "Security Installations",
     description: "Full perimeter steel fencing installation for an industrial property.",
-    image: "/image/project1.jpg"
+    image: "/image/hero.jpg"
   },
   {
     title: "Custom Fabricated Balcony",
     category: "Custom Fabrication",
     description: "Decorative yet durable steel balcony fabricated for residential property.",
-    image: "/image/project2.jpg"
+    image: "/image/hero.jpg"
   },
   {
     title: "Warehouse Steel Reinforcement",
     category: "Structural Steel",
     description: "Structural reinforcement project improving load-bearing capability.",
-    image: "/image/project3.jpg"
+    image: "/image/hero.jpg"
   }
 ]
 

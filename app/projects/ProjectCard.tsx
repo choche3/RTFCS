@@ -1,3 +1,8 @@
+"use client"
+
+import { fadeUp, staggerContainer } from "@/lib/animations";
+import { motion } from "framer-motion"
+
 
 type Project = {
     title: string;
@@ -9,11 +14,23 @@ type Project = {
 
 export default function ProjectCard({ title, category, description, image }: Project) {
     return (
-        <div className="bg-white rounded-xl shadow border border-steel/30 overflow-hidden">
+        <motion.div
+            variants={staggerContainer}
+            initial= "hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white rounded-xl shadow border border-steel/30 overflow-hidden"
+        >
 
-            <img src={image} alt={title} className="w-full h-56 object-cover" />
+            <motion.div
+                variants={fadeUp}
+            >
+                <img src={image} alt={title} className="w-full h-56 object-cover" />
+            </motion.div>
 
-            <div className="p-6">
+            <motion.div    
+                variants={fadeUp}
+                className="p-6">
 
                 <span className="text-sm text-gray-900 text-indutrial font-semibold uppercase">
                     {category}
@@ -26,7 +43,7 @@ export default function ProjectCard({ title, category, description, image }: Pro
                 <p className="text-gray-600">
                     {description}
                 </p>
-            </div>
-        </div> 
+            </motion.div>
+        </motion.div> 
     )
 }

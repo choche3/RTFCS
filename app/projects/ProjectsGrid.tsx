@@ -3,10 +3,10 @@ import ProjectCard from "./ProjectCard"
 
 const projects = [
   {
-    title: "Industrial Steel Structure",
+    title: "Industrial Gate installation",
     category: "Structural Fabrication",
-    description: "Fabrication and installation of a reinforced steel structure for a warehouse facility.",
-    image: "/image/hero.jpg"
+    description: "Fabrication and installation of heavy-duty reinforced steel gate structure for industrial Protection.",
+    image: "/image/IMG-20260309-WA0011.jpg"
   },
   {
     title: "Security Gate Installation",
@@ -15,28 +15,28 @@ const projects = [
     image: "/image/IMG-20260225-WA0022.jpg"
   },
   {
-    title: "Commercial Steel Staircase",
+    title: "Commercial Steel Window Frames",
     category: "Metal Fabrication",
-    description: "Precision-crafted steel staircase installed for a commercial office building.",
-    image: "/image/hero.jpg"
+    description: "Precision-crafted steel window frames installed for a small office building and homes.",
+    image: "/image/IMG-20260309-WA0004.jpg"
   },
   {
     title: "Perimeter Security Fencing",
     category: "Security Installations",
     description: "Full perimeter steel fencing installation for an industrial property.",
-    image: "/image/hero.jpg"
+    image: "/image/IMG-20260309-WA0008.jpg"
   },
   {
-    title: "Custom Fabricated Balcony",
+    title: "Custom Fabricated Residential Gates",
     category: "Custom Fabrication",
-    description: "Decorative yet durable steel balcony fabricated for residential property.",
-    image: "/image/hero.jpg"
+    description: "Decorative yet durable steel gates fabricated for residential property.",
+    image: "/image/IMG-20260309-WA0006.jpg"
   },
   {
-    title: "Warehouse Steel Reinforcement",
+    title: "Tank Stand Steel Reinforcement",
     category: "Structural Steel",
     description: "Structural reinforcement project improving load-bearing capability.",
-    image: "/image/hero.jpg"
+    image: "/image/IMG-20260309-WA0018.jpg"
   }
 ]
 

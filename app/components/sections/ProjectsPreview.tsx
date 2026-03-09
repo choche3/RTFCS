@@ -14,7 +14,7 @@ export default function ProjectsPreview() {
                 {/**Header */}
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
                     <div className="max-w-2xl">
-                        <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wideHeavy mb-4">
+                        <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide mb-4">
                             Completed Projects
                         </h2>
                         <p className="text-steel text-lg">
@@ -44,7 +44,7 @@ export default function ProjectsPreview() {
                         variants={fadeUp}
                         className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
-                            src="/image/hero.jpg"
+                            src="/image/IMG-20260309-WA0002.jpg"
                             alt="steel structure installation"
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -64,7 +64,7 @@ export default function ProjectsPreview() {
                         variants={fadeUp} 
                         className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
-                            src="/image/hero.jpg"
+                            src="/image/IMG-20260309-WA0016.jpg"
                             alt="Custom security gate"
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-500" 
@@ -84,10 +84,10 @@ export default function ProjectsPreview() {
                         variants={fadeUp}
                         className="relative group h-80 overflow-hidden border border-steel/30">
                         <Image
-                            src="/image/hero.jpg"
+                            src="/image/IMG-20260309-WA0024.jpg"
                             alt="Steel door fabrication"
                             fill
-                            className="object-cover group-hover:scale-105 transition-transform duration 500"
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-transform duration-500" />
                         <div className="absolute bottom-0 p-8">

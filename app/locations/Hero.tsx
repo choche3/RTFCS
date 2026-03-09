@@ -7,10 +7,10 @@ import { fadeUp } from "@/lib/animations"
 
 export default function Hero(){
     return(
-        <section className="relative mt-28 w-full h-[65vh] flex items-center">
+        <section className="relative mt-25 w-full h-[65vh] flex items-center">
             {/**Background Image */}
             <Image
-                src="/image/IMG-20260225-WA0023.jpg"
+                src="/image/IMG-20260309-WA0003.jpg"
                 alt="Industrial steel fabrication workshop"
                 fill
                 priority
@@ -28,11 +28,11 @@ export default function Hero(){
                     variants={fadeUp}
                 >
 
-                    <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide mb-6">
+                    <h1 className="text-4xl text-yellow-400 md:text-5xl font-bold uppercase tracking-wide mb-6">
                         Our Location
                     </h1>
 
-                    <p className="text-steel max-w-2xl mx-auto">
+                    <p className="text-yellow-500 max-w-2xl mx-auto">
                         Visit our workshop or office to discuss your fabrication and construction needs with us.
                     </p>
 

@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import CompanyOverView from "./CompanyOverView";
 import Experience from "./Experience";
 import MissionStatement from "./MissionStatement";
+import Assurance from "./Assurance";
 
 export default function AboutPage() {
     return(
@@ -9,6 +10,7 @@ export default function AboutPage() {
             <Hero />
             <CompanyOverView />
             <Experience />
+            <Assurance />
             <MissionStatement />
         </>
     )

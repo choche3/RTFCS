@@ -7,7 +7,7 @@ import { fadeUp } from "@/lib/animations";
 
 export default function Hero() {
     return(
-        <section className="relative w-full h-[75vh] flex items-center">
+        <section className="relative mt-15 w-full h-[75vh] flex items-center">
             {/**Background Image */}
             <Image
                src="/image/MainHero.jpg"

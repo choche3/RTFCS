@@ -17,7 +17,9 @@ export default function ServiceSection(){
             >
 
                 {/**Section Header */}
-                <div className="mb-16 max-w-2xl">
+                <motion.div 
+                    variants={fadeUp}
+                    className="mb-16 max-w-2xl">
                     <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wideHeavy mb-4">
                         Our Services
                     </h2>
@@ -25,7 +27,7 @@ export default function ServiceSection(){
                         Comprehensive steel fabrication and construction solutions delivered with
                         precision and reliability. Serving Lusaka and Kitwe with structural, security, and industrial services.
                     </p>
-                </div>
+                </motion.div>
 
                 {/**Services Grid */}
                 <div className="grid md:grid-cols-3 gap-8">

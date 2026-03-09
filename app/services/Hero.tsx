@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return(
-        <section className="relative w-full h-[65vh] flex items-center">
+        <section className="relative mt-28 w-full h-[65vh] flex items-center">
             {/**Background Image */}
             <Image
                src="/image/20260308_0009.jpg"

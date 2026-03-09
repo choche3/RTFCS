@@ -1,18 +1,36 @@
 "use client"
 
+import { motion, useScroll } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Navbar(){
     const[isOpen, setIsOpen] = useState(false);
+    const { scrollY } =useScroll()
+    const [ scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const unsubscribe = scrollY.on("change", (latest) => {
+            setScrolled(latest >80)
+        })
+        return () => unsubscribe()
+    }, [scrollY])
 
     return(
-        <header className="w-full bg-navy border-b border-steel/30">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justift-between">
+        <motion.header 
+           className="fixed top-0 left-0 w-full z-50 border-b border-steel/30"
+           animate={{
+            padding: scrolled ? "10px" : "20px",
+            paddingBottom: scrolled ? "10px" : "20px",
+            backgroundColor: scrolled ? "rgba(10,10,10,0.95)" : "rgba(10,10,10,0.6)",
+            backdropFilter: "blur(6px)"
+           }}
+           transition={{ duration: 0.5 }}>
+            <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
                 {/**logo */}
                 <Link href="/" className="flex flex-col leading-tight">
-                    <span className="text-white font-extrabold text-lg tracking-wideHeavy uppercase">
+                    <span className="text-white font-extrabold text-lg tracking-wide uppercase">
                         RT <span className="text-yellow-600">Fabrications</span>
                     </span>
                     <span className="text-steel text-xs uppercase tracking-wider">
@@ -22,19 +40,19 @@ export default function Navbar(){
 
                 {/**Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-10">
-                    <Link href="/about" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/about" className="text-steel uppercase text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         About Us
                     </Link>
-                    <Link href="/services" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/services" className="text-steel uppercase text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Services
                     </Link>
-                    <Link href="/projects" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/projects" className="text-steel uppercase text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Projects
                     </Link>
-                    <Link href="/locations" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/locations" className="text-steel uppercase text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Location
                     </Link>
-                    <Link href="/contacts" className="text-steel uppercaser text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
+                    <Link href="/contacts" className="text-steel uppercase text-sm tracking-wide font-semibold hover:text-industrial transition-colors duration-300">
                         Contact
                     </Link>
 
@@ -71,13 +89,13 @@ export default function Navbar(){
 
                     <Link
                         href="/contacts"
-                        className="block w-full text-center bg-industrial text-gray-300 py-3 uppercase font-bold tracing-wide"
+                        className="block w-full text-center bg-industrial text-gray-300 py-3 uppercase font-bold tracking-wide"
                         onClick={() => setIsOpen(false)}
                     >
                         Get in Touch
                     </Link>
                 </div>
             )}
-        </header>
+        </motion.header>
     )
 }

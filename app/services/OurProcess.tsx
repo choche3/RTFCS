@@ -1,13 +1,29 @@
+"use client"
+
+import { fadeUp, staggerContainer } from "@/lib/animations"
+import { motion } from "framer-motion"
+
 
 export default function OurProcess() {
     return(
         <section className="bg-gray-700 py-20 text-white">
-            <div className="max-w-6xl mx-auto px-6 lg:px-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-center uppercase mb-16">
+            <motion.div 
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="max-w-6xl mx-auto px-6 lg:px-12"
+            >
+                <motion.h2  
+                    variants={fadeUp}
+                    className="text-3xl md:text-4xl font-bold text-center uppercase mb-16"
+                >
                     Our Process
-                </h2>
+                </motion.h2>
                 
-                <div className="grid md:grid-cols-3 gap-10 text-center">
+                <motion.div 
+                    variants={fadeUp}
+                    className="grid md:grid-cols-3 gap-10 text-center">
                     <div>
                         <h3 className="text-xl font-bold mb-4 text-industrial">Consultation</h3>
                         <p className="text-steel">
@@ -28,8 +44,8 @@ export default function OurProcess() {
                             we ensure timely installation and completion ehile maintaining quality workmanship.
                         </p>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }

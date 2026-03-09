@@ -1,14 +1,28 @@
+"use client"
 
+import { fadeUp, staggerContainer } from "@/lib/animations"
+import { motion } from "framer-motion"
 
 export default function ServicesGrid() {
     return(
         <section className="bg-navy py-20">
-            <div className="max-w-6xl mx-auto px-6 lg:px-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-center uppercase mb-16">
+            <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="max-w-6xl mx-auto px-6 lg:px-12"
+            >
+                <motion.h2 
+                    variants={fadeUp}
+                    className="text-3xl md:text-4xl font-bold text-center uppercase mb-16"
+                >
                     What We Do
-                </h2>
+                </motion.h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <motion.div 
+                    variants={fadeUp}
+                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div className="bg-white p-8 rounded-xl shadow border border-steel/30">
                         <h3 className="text-xl text-gray-800 font-bold mb-4">Metal Fabrication</h3>
                         <p className="text-gray-700">
@@ -51,8 +65,8 @@ export default function ServicesGrid() {
                         </p>
                     </div>
 
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }

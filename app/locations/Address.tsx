@@ -1,11 +1,23 @@
+"use client"
+
+import { fadeUp, staggerContainer } from "@/lib/animations"
+import { motion } from "framer-motion"
 
 
 export default function Address() {
     return(
         <section className="bg-black text-center py-20">
-            <div className="max-w-6xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 text-center">
+            <motion.div 
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="max-w-6xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 text-center"
+                >
 
-                <div>
+                <motion.div
+                    variants={fadeUp}
+                >
                     <h2 className="text-3xl font-bold uppercase mb-6">
                         Visit our offices
                     </h2>
@@ -18,9 +30,9 @@ export default function Address() {
 
                     <div className="space-y-4">
                         <div>
-                            <h3 className="font-semiold">Address</h3>
+                            <h3 className="font-semibold">Address</h3>
                             <p className="text-gray-300">
-                                plot 1234. Industrial area, Lusaka, Zambia
+                                plot B1/12/13. Industrial area, Kalingalinga, Lusaka, Zambia
                             </p>
                         </div>
 
@@ -34,14 +46,13 @@ export default function Address() {
                         <div>
                             <h3 className="font-semibold">Business Hours</h3>
                             <p className="text-gray-300">
-                                Mon-Fri: 8:00 AM - 17:00 PM
-                                Saturday: 9:00 AM - 13:00 PM
+                                Mon-Sat: 06:00 hrs - 18:00 hrs
                             </p>
                         </div>
                         
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }

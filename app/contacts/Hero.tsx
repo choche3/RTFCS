@@ -14,6 +14,8 @@ export default function Hero(){
                 alt="industrial steel fabrication workshop"
                 fill
                 priority
+                quality={75}
+                sizes="100vh"
                 className="object-cover"
             />
 

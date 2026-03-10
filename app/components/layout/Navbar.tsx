@@ -89,7 +89,7 @@ export default function Navbar(){
 
                     <Link
                         href="/contacts"
-                        className="block w-full text-center bg-industrial text-gray-300 py-3 uppercase font-bold tracking-wide"
+                        className="block w-full text-center bg-yellow-500 text-gray-300 py-3 rounded-sm uppercase font-bold tracking-wide"
                         onClick={() => setIsOpen(false)}
                     >
                         Get in Touch

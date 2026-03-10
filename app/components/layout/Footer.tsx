@@ -43,7 +43,6 @@ export default function Footer() {
                         <div>
                             <p className="text-white font-semibold">Kitwe</p>
                             <p>Wusakile Round About</p>
-                            <p>+260 95 xxxxx</p>
                         </div>
                     </div>
                 </div>

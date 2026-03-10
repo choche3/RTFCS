@@ -2,7 +2,8 @@
 
 import { fadeUp } from "@/lib/animations"
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useState, } from "react"
+
 
 export default function ContactPage(){
     const [formData, setFormData] = useState({
@@ -12,17 +13,42 @@ export default function ContactPage(){
         message: "",
     })
 
+    const [status, setStatus] = useState("")
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         })
     }
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(formData)
-        alert("Message sent successfully!")
+
+        try{
+            const response = await fetch("https://formspree.io/f/mdawegon", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
+
+            if(response.ok){
+                setStatus("✅ Message sent successfully! We will get back to you.")
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    message: "",
+                })
+            }
+        } catch (error){
+            setStatus("❌ Something went wrong. please try again")
+        }
     }
+    
+
 
     return(
     <motion.div
@@ -88,6 +114,9 @@ export default function ContactPage(){
                 Send Message
             </button>
         </form>
+        {status && (
+            <p className="mt-4 text-green-500 font-medium">{status}</p>
+        )}
         <p className="mt-10">Send us an email with your inquiry or project detail</p>
     </motion.div>
     )

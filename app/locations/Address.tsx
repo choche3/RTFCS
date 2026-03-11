@@ -52,6 +52,13 @@ export default function Address() {
                         
                     </div>
                 </motion.div>
+                <motion.div variants={fadeUp}>
+                    <img
+                        src="/image/IMG-20260309-WA0019.jpg"
+                        alt="Real Time Fabricators Workshop"
+                        className="rounded-xl shadow-lg w-full h-[350px] object-cover"
+                    />
+                </motion.div>
             </motion.div>
         </section>
     )

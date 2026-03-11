@@ -5,6 +5,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
+import Chatbot from "./components/chatbot/Chatbot";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,7 @@ export const openGraph: OpenGraph = {
   title: "Real Time Fabrications and Construction Services",
   description:"Professional steel fabrication and construction services for residential and commercial projects. Contact us for custom solutions and expert craftsmanship. Located in Lusaka and Kitwe.",
   images:["/image/IMG-20260223-WA0015 - Edited"],
-}
+} 
 
 export default function RootLayout({
   children,
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Chatbot />
         <SpeedInsights />
       </body>
     </html>

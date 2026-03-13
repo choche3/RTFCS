@@ -65,7 +65,7 @@ export default function LocationPreview(){
                             href="/contacts"
                             className="bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition"
                         >
-                            View Full contact Details
+                            View Full Contact Details
                         </Link>
                     </motion.div>
 

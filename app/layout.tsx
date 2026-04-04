@@ -6,6 +6,7 @@ import Footer from "./components/layout/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import Chatbot from "./components/chatbot/Chatbot";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Chatbot />
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
